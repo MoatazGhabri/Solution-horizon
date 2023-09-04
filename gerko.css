@@ -1,0 +1,908 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    y text-align: center;
+    padding: 1rem;
+}
+
+
+/* Nouveau style pour l'animation du titre du header avec le logo */
+
+header {
+    background-image: url(businessman-2682712_1920.jpg);
+    /* Replace this with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    /* Set the height of the header to adjust the image size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: ;
+    padding: 1rem;
+}
+
+.h2 {
+    position: left;
+    left: 100px;
+}
+
+header img {
+    width: 150px;
+    /* Ajuster la taille du logo selon vos besoins */
+    margin-right: 10px;
+    /* Espacement
+entre le logo et le texte */
+    margin-left: 350px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+.ccontainer {
+    padding: 2rem;
+}
+
+
+/* Define the animation */
+
+@keyframes changeColor {
+    -225deg,
+    0% {
+        color: #231557;
+        /* Start with the initial color */
+    }
+    29% {
+        color: #44107a;
+        /* Midway change the color to #1f3a94 */
+    }
+    67% {
+        color: #ff1361;
+        /* Midway change the color to #1f3a94
+*/
+    }
+    100% {
+        color: fff800;
+        /* End with the initial color */
+    }
+}
+
+
+/* Apply the animation to the .animate-heading class */
+
+h2.animate-heading span {
+    animation: changeColor 2s infinite;
+    position: left;
+    left: 100px;
+    /* Apply the animation */
+}
+
+#accueil {
+    background-image: url("acc.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* styles.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.paragraph-animati {
+    font-size: 18px;
+    line-height: 1.6;
+    position: relative;
+    animation: slideIn 1s ease-in-out;
+}
+
+.paragraph-animati::before,
+.paragraph-animati::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #007BFF;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.paragraph-animati::before {
+    left: -40px;
+}
+
+.paragraph-animati::after {
+    right: -40px;
+}
+
+.paragraph-animati:hover::before,
+.paragraph-animati:hover::after {
+    width: 60px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about {
+    margin-top: 2rem;
+}
+
+
+/* Stylisation de la section de contact */
+
+.contact-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+
+/* Centrage vertical des éléments de la section */
+
+.row.justify-content-center.align-items-center {
+    min-height: 100vh;
+    display: flex;
+}
+
+#apropos {
+    background-image: url("laptop-3196481_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4e5155;
+    text-align: center;
+    position: relative;
+    /* Added position */
+    /* Animation */
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#apropos p {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.paraphe p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    margin: 0;
+    font-size: 20px;
+    font-style: italic;
+    color: #666666;
+    margin: 0;
+}
+
+#apropos span {
+    display: inline-block;
+    position: relative;
+    color: #007BFF;
+    /* Changed color */
+    font-weight: bold;
+    /* Added font-weight */
+}
+
+#apropos span::before,
+#apropos span::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #007BFF;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width 0.3s ease-in-out;
+    /* Added transition */
+}
+
+#apropos span::before {
+    left: -40px;
+}
+
+#apropos span::after {
+    right: -40px;
+}
+
+#apropos:hover span::before,
+#apropos:hover span::after {
+    width: 50px;
+    /* Enlarge lines on hover */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.waviy {
+    position: relative;
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+#text {
+    text-align: center;
+    position: relative;
+    top: 200px;
+    font-size: 7em;
+}
+
+.text0,
+.text2 {
+    color: black;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.text1,
+.text3 {
+    color: black;
+    -webkit-text-fill-color: #bc0000;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#dummy {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+#back {
+    position: relative;
+    padding-top: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #back {
+        cursor: none;
+        font-size: 0.8em;
+    }
+    #text {
+        top: 70px;
+        font-size: 2.25em;
+    }
+}
+
+
+/*inscriptionnn
+/* @extend display-flex; */
+
+display-flex,
+.display-flex,
+.display-flex-center {
+    display: flex;
+    display: -webkit-flex;
+}
+
+
+/* @extend list-type-ulli; */
+
+list-type-ulli {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Montserrat-300 - latin */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/montserrat/Montserrat-Light.ttf");
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/montserrat/Montserrat-Italic.ttf");
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/montserrat/Montserrat-BoldItalic.ttf");
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 900;
+    src: url("../fonts/montserrat/montserrat-v12-latin-900.ttf"), url("../fonts/montserrat/montserrat-v12-latin-900.eot") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v12-latin-900.svg") format("woff2"), url("../fonts/montserrat/montserrat-v12-latin-900.woff") format("woff"), url("../fonts/montserrat/montserrat-v12-latin-900.woff2") format("truetype");
+}
+
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    transition: all 300ms ease 0s;
+    -moz-transition: all 300ms ease 0s;
+    -webkit-transition: all 300ms ease 0s;
+    -o-transition: all 300ms ease 0s;
+    -ms-transition: all 300ms ease 0s;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    appearance: unset !important;
+    -moz-appearance: unset !important;
+    -webkit-appearance: unset !important;
+    -o-appearance: unset !important;
+    -ms-appearance: unset !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    -o-appearance: none !important;
+    -ms-appearance: none !important;
+    margin: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+}
+
+input[type=checkbox] {
+    appearance: checkbox !important;
+    -moz-appearance: checkbox !important;
+    -webkit-appearance: checkbox !important;
+    -o-appearance: checkbox !important;
+    -ms-appearance: checkbox !important;
+}
+
+input[type=radio] {
+    appearance: radio !important;
+    -moz-appearance: radio !important;
+    -webkit-appearance: radio !important;
+    -o-appearance: radio !important;
+    -ms-appearance: radio !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+.field-icon {
+    float: right;
+    margin-right: 17px;
+    margin-top: -32px;
+    position: relative;
+    z-index: 2;
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: calc(100% - 40px);
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .signup-content {
+        padding: 50px 25px;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+hhh nos servcice .services {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #07dfee;
+}
+
+.service {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.service p {
+    color: #555;
+}
+
+.service ul {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.service-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.service-button:hover {
+    background-color: #0056b3;
+}
+
+.service-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.service-icon {
+    font-size: 30px;
+    margin: 0 20px;
+    color: #007bff;
+}
+
+/jjjgyuijioj .temoignages-section {
+    background-image: url('background.jpg');
+    /* Remplacez 'background.jpg' par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    /* Ajustez les valeurs de remplissage selon vos besoins */
+    color: #320368;
+    /* Couleur du texte */
+}
+
+.temoignages-section h2 {
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    background-color: rgba(0, 0, 0, 0.205);
+    /* Couleur de fond semi-transparente */
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    text-align: center;
+}
+
+.testimonial-author img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.testimonial-author h5 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.testimonial-author p {
+    font-size: 14px;
+}
+
+aprooopoo
+/* Ajouter des styles personnalisés si nécessaire */
+
+.animated-text {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+contaccccc
+/* Style pour la section de contact */
+
+.contact-section {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.contact-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.dbox {
+    margin-bottom: 20px;
+}
+
+.dbox .icon {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #f39c12;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dbox .text {
+    padding-left: 20px;
+    color: white;
+}
+
+.dbox a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Modifier le style de l'icône pour le téléphone */
+
+.dbox .icon.fa-phone {
+    background-color: #e74c3c;
+}
+
+
+/* Modifier le style de l'icône pour l'e-mail */
+
+.dbox .icon.fa-paper-plane {
+    background-color: #3498db;
+}
+
+
+/* Modifier le style de l'icône pour le site web */
+
+.dbox .icon.fa-globe {
+    background-color: #2ecc71;
+}
+
+servisssssssssssss
+/* Styling pour les services */
+
+.services {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.service {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service-icons {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    /* Alignement à gauche du texte */
+    margin-left: 20px;
+}
+
+.service-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.service-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Styling pour les modales */
+
+.modal-content {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: #ffffff;
+    border-bottom: none;
+}
+
+.modal-title {
+    font-size: 24px;
+}
+
+.modal-body {
+    font-size: 16px;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+tempooo ooo
+/* styles.css */
+
+
+/* Ajoutez ici vos styles personnalisés */
+
+
+/* Style général pour le carrousel de témoignages */
+
+#testimonialCarousel {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* Style pour les témoignages */
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Style pour le texte des témoignages */
+
+.testimonial p {
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+/* Style pour l'image et le nom du témoin */
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-author img {
+    width: 70px;
+    height: 70px;
+    border-radius: 60%;
+    margin-right: 20px;
+}
+
+.testimonial-author h5 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.testimonial-author p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Style pour les flèches de navigation du carrousel */
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+
+/* Style pour le pied de page */
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
